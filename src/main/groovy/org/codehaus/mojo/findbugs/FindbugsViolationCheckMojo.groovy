@@ -387,6 +387,14 @@ class FindbugsViolationCheckMojo extends GroovyMojo {
 	Boolean trace
 
 	/**
+	 * Maximum bug ranking to record.
+	 *
+	 * @parameter expression="${findbugs.maxRank}"
+	 * @since 2.4.1
+	 */
+	int maxRank
+
+	/**
 	 * Skip entire check.
 	 *
 	 * @parameter expression="${findbugs.skip}" default-value="false"
